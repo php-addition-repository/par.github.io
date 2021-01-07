@@ -3,7 +3,7 @@ Search.appendIndex(
                 {
             "fqsen": "\\Par\\Core\\Hashable",
             "name": "Hashable",
-            "summary": "",
+            "summary": "Hashable\u0020is\u0020an\u0020interface\u0020which\u0020allows\u0020objects\u0020to\u0020be\u0020used\u0020as\u0020keys.",
             "url": "classes/Par-Core-Hashable.html"
         },                {
             "fqsen": "\\Par\\Core\\Hashable\u003A\u003Ahash\u0028\u0029",
