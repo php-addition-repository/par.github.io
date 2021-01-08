@@ -66,6 +66,36 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Par-Core-HashCode.html#constant_MAX_RECURSION_DEPTH"
         },                {
+            "fqsen": "\\Par\\Core\\PHPUnit\\Constraint\\HashableEquals",
+            "name": "HashableEquals",
+            "summary": "",
+            "url": "classes/Par-Core-PHPUnit-Constraint-HashableEquals.html"
+        },                {
+            "fqsen": "\\Par\\Core\\PHPUnit\\Constraint\\HashableEquals\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/Par-Core-PHPUnit-Constraint-HashableEquals.html#method___construct"
+        },                {
+            "fqsen": "\\Par\\Core\\PHPUnit\\Constraint\\HashableEquals\u003A\u003AtoString\u0028\u0029",
+            "name": "toString",
+            "summary": "",
+            "url": "classes/Par-Core-PHPUnit-Constraint-HashableEquals.html#method_toString"
+        },                {
+            "fqsen": "\\Par\\Core\\PHPUnit\\HashableAssertions",
+            "name": "HashableAssertions",
+            "summary": "Include\u0020this\u0020trait\u0020in\u0020your\u0020unit\u0020tests\u0020to\u0020easily\u0020compare\u0020a\u0020value\u0020against\u0020an\u0020expected\u0020instance\u0020of\u0020a\n\u0060\\Par\\Core\\Hashable\u0060\u0020implementation.",
+            "url": "classes/Par-Core-PHPUnit-HashableAssertions.html"
+        },                {
+            "fqsen": "\\Par\\Core\\PHPUnit\\HashableAssertions\u003A\u003AassertHashNotEquals\u0028\u0029",
+            "name": "assertHashNotEquals",
+            "summary": "",
+            "url": "classes/Par-Core-PHPUnit-HashableAssertions.html#method_assertHashNotEquals"
+        },                {
+            "fqsen": "\\Par\\Core\\PHPUnit\\HashableAssertions\u003A\u003AassertHashEquals\u0028\u0029",
+            "name": "assertHashEquals",
+            "summary": "",
+            "url": "classes/Par-Core-PHPUnit-HashableAssertions.html#method_assertHashEquals"
+        },                {
             "fqsen": "\\Par\\Core\\Values",
             "name": "Values",
             "summary": "This\u0020class\u0020consists\u0020of\u0020static\u0020utility\u0020methods\u0020for\u0020operating\u0020on\u0020values.",
@@ -105,5 +135,15 @@ Search.appendIndex(
             "name": "Par",
             "summary": "",
             "url": "namespaces/par.html"
+        },                {
+            "fqsen": "\\Par\\Core\\PHPUnit\\Constraint",
+            "name": "Constraint",
+            "summary": "",
+            "url": "namespaces/par-core-phpunit-constraint.html"
+        },                {
+            "fqsen": "\\Par\\Core\\PHPUnit",
+            "name": "PHPUnit",
+            "summary": "",
+            "url": "namespaces/par-core-phpunit.html"
         }            ]
 );
