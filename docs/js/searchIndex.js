@@ -3,7 +3,7 @@ Search.appendIndex(
                 {
             "fqsen": "\\Par\\Core\\Enum",
             "name": "Enum",
-            "summary": "",
+            "summary": "This\u0020is\u0020the\u0020common\u0020base\u0020class\u0020of\u0020all\u0020enumerations.",
             "url": "classes/Par-Core-Enum.html"
         },                {
             "fqsen": "\\Par\\Core\\Enum\u003A\u003A__callStatic\u0028\u0029",
