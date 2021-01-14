@@ -16,15 +16,15 @@ Search.appendIndex(
             "summary": "Returns\u0020the\u0020enum\u0020element\u0020of\u0020the\u0020specified\u0020enum\u0020type\u0020with\u0020the\u0020specified\u0020name.\u0020The\u0020name\u0020must\u0020match\u0020exactly\u0020an\nidentifier\u0020used\u0020to\u0020declare\u0020an\u0020enum\u0020element\u0020in\u0020this\u0020type.\u0020\u0028Extraneous\u0020whitespace\u0020characters\u0020are\u0020not\u0020permitted.\u0029",
             "url": "classes/Par-Core-Enum.html#method_valueOf"
         },                {
-            "fqsen": "\\Par\\Core\\Enum\u003A\u003Avalues\u0028\u0029",
-            "name": "values",
-            "summary": "Returns\u0020a\u0020list\u0020containing\u0020the\u0020elements\u0020of\u0020this\u0020enum\u0020type,\u0020in\u0020the\u0020order\u0020they\u0020are\u0020declared.",
-            "url": "classes/Par-Core-Enum.html#method_values"
-        },                {
             "fqsen": "\\Par\\Core\\Enum\u003A\u003Aordinal\u0028\u0029",
             "name": "ordinal",
             "summary": "Returns\u0020the\u0020ordinal\u0020of\u0020this\u0020enum\u0020element\u0020\u0028its\u0020position\u0020in\u0020its\u0020declaration,\u0020where\u0020the\u0020initial\u0020element\u0020is\u0020assigned\nan\u0020ordinal\u0020of\u0020zero\u0029.",
             "url": "classes/Par-Core-Enum.html#method_ordinal"
+        },                {
+            "fqsen": "\\Par\\Core\\Enum\u003A\u003Avalues\u0028\u0029",
+            "name": "values",
+            "summary": "Returns\u0020a\u0020list\u0020containing\u0020the\u0020elements\u0020of\u0020this\u0020enum\u0020type,\u0020in\u0020the\u0020order\u0020they\u0020are\u0020declared.",
+            "url": "classes/Par-Core-Enum.html#method_values"
         },                {
             "fqsen": "\\Par\\Core\\Enum\u003A\u003Aname\u0028\u0029",
             "name": "name",
@@ -51,15 +51,20 @@ Search.appendIndex(
             "summary": "Produces\u0020a\u0020scalar\u0020or\u0020null\u0020value\u0020to\u0020be\u0020used\u0020as\u0020the\u0020object\u0027s\u0020hash,\u0020which\u0020determines\nwhere\u0020it\u0020goes\u0020in\u0020the\u0020hash\u0020table.\u0020While\u0020this\u0020value\u0020does\u0020not\u0020have\u0020to\u0020be\nunique,\u0020objects\u0020which\u0020are\u0020equal\u0020must\u0020have\u0020the\u0020same\u0020hash\u0020value.",
             "url": "classes/Par-Core-Enum.html#method_hash"
         },                {
-            "fqsen": "\\Par\\Core\\Enum\u003A\u003Aserialize\u0028\u0029",
-            "name": "serialize",
+            "fqsen": "\\Par\\Core\\Enum\u003A\u003A__clone\u0028\u0029",
+            "name": "__clone",
             "summary": "",
-            "url": "classes/Par-Core-Enum.html#method_serialize"
+            "url": "classes/Par-Core-Enum.html#method___clone"
         },                {
-            "fqsen": "\\Par\\Core\\Enum\u003A\u003Aunserialize\u0028\u0029",
-            "name": "unserialize",
+            "fqsen": "\\Par\\Core\\Enum\u003A\u003A__sleep\u0028\u0029",
+            "name": "__sleep",
             "summary": "",
-            "url": "classes/Par-Core-Enum.html#method_unserialize"
+            "url": "classes/Par-Core-Enum.html#method___sleep"
+        },                {
+            "fqsen": "\\Par\\Core\\Enum\u003A\u003A__wakeup\u0028\u0029",
+            "name": "__wakeup",
+            "summary": "",
+            "url": "classes/Par-Core-Enum.html#method___wakeup"
         },                {
             "fqsen": "\\Par\\Core\\Exception\\ExceptionInterface",
             "name": "ExceptionInterface",
