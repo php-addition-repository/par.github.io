@@ -147,14 +147,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/core/src/Util/StringUtils.php"><a href="files/packages-core-src-util-stringutils.html"><abbr title="packages/core/src/Util/StringUtils.php">StringUtils.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">40</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 </aside>
 
         <p class="phpdocumentor-summary">Returns a string where all elements have been joined in a human readable way.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">listToHumanReadable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$list</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">listToHumanReadable</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string|\Stringable&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$list</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"><p>For example:</p>
 <ul>
@@ -171,7 +171,7 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$list</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string|\Stringable&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>A list of strings</p>
@@ -181,6 +181,20 @@
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">psalm-pure</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
@@ -203,14 +217,14 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/core/src/Util/StringUtils.php"><a href="files/packages-core-src-util-stringutils.html"><abbr title="packages/core/src/Util/StringUtils.php">StringUtils.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">18</span>
+    <span class="phpdocumentor-element-found-in__line">19</span>
 </aside>
 
         <p class="phpdocumentor-summary">Returns a list where all elements have been encapsulated with double quotes (`&quot;element&quot;`).</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">quoteList</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$list</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">quoteList</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string|\Stringable&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$list</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -218,7 +232,7 @@
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$list</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string&gt;</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, string|\Stringable&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>A list of string that will be quoted</p>
@@ -228,6 +242,20 @@
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">psalm-pure</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">array&lt;string|int, string&gt;</span>
