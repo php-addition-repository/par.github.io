@@ -6,25 +6,20 @@ Search.appendIndex(
             "summary": "This\u0020is\u0020the\u0020common\u0020base\u0020class\u0020of\u0020all\u0020enumerations.",
             "url": "classes/Par-Core-Enum.html"
         },                {
-            "fqsen": "\\Par\\Core\\Enum\u003A\u003A__callStatic\u0028\u0029",
-            "name": "__callStatic",
-            "summary": "",
-            "url": "classes/Par-Core-Enum.html#method___callStatic"
-        },                {
             "fqsen": "\\Par\\Core\\Enum\u003A\u003AvalueOf\u0028\u0029",
             "name": "valueOf",
             "summary": "Returns\u0020the\u0020enum\u0020element\u0020of\u0020the\u0020specified\u0020enum\u0020type\u0020with\u0020the\u0020specified\u0020name.\u0020The\u0020name\u0020must\u0020match\u0020exactly\u0020an\nidentifier\u0020used\u0020to\u0020declare\u0020an\u0020enum\u0020element\u0020in\u0020this\u0020type.\u0020\u0028Extraneous\u0020whitespace\u0020characters\u0020are\u0020not\u0020permitted.\u0029",
             "url": "classes/Par-Core-Enum.html#method_valueOf"
         },                {
-            "fqsen": "\\Par\\Core\\Enum\u003A\u003Aordinal\u0028\u0029",
-            "name": "ordinal",
-            "summary": "Returns\u0020the\u0020ordinal\u0020of\u0020this\u0020enum\u0020element\u0020\u0028its\u0020position\u0020in\u0020its\u0020declaration,\u0020where\u0020the\u0020initial\u0020element\u0020is\u0020assigned\nan\u0020ordinal\u0020of\u0020zero\u0029.",
-            "url": "classes/Par-Core-Enum.html#method_ordinal"
-        },                {
             "fqsen": "\\Par\\Core\\Enum\u003A\u003Avalues\u0028\u0029",
             "name": "values",
             "summary": "Returns\u0020a\u0020list\u0020containing\u0020the\u0020elements\u0020of\u0020this\u0020enum\u0020type,\u0020in\u0020the\u0020order\u0020they\u0020are\u0020declared.",
             "url": "classes/Par-Core-Enum.html#method_values"
+        },                {
+            "fqsen": "\\Par\\Core\\Enum\u003A\u003Aordinal\u0028\u0029",
+            "name": "ordinal",
+            "summary": "Returns\u0020the\u0020ordinal\u0020of\u0020this\u0020enum\u0020element\u0020\u0028its\u0020position\u0020in\u0020its\u0020declaration,\u0020where\u0020the\u0020initial\u0020element\u0020is\u0020assigned\nan\u0020ordinal\u0020of\u0020zero\u0029.",
+            "url": "classes/Par-Core-Enum.html#method_ordinal"
         },                {
             "fqsen": "\\Par\\Core\\Enum\u003A\u003Aname\u0028\u0029",
             "name": "name",
@@ -33,12 +28,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Par\\Core\\Enum\u003A\u003AtoString\u0028\u0029",
             "name": "toString",
-            "summary": "",
+            "summary": "Returns\u0020the\u0020name\u0020of\u0020this\u0020enum\u0020constant,\u0020as\u0020contained\u0020in\u0020the\u0020declaration.",
             "url": "classes/Par-Core-Enum.html#method_toString"
         },                {
             "fqsen": "\\Par\\Core\\Enum\u003A\u003A__toString\u0028\u0029",
             "name": "__toString",
-            "summary": "",
+            "summary": "Returns\u0020the\u0020name\u0020of\u0020this\u0020enum\u0020constant,\u0020as\u0020contained\u0020in\u0020the\u0020declaration.",
             "url": "classes/Par-Core-Enum.html#method___toString"
         },                {
             "fqsen": "\\Par\\Core\\Enum\u003A\u003Aequals\u0028\u0029",
@@ -50,21 +45,6 @@ Search.appendIndex(
             "name": "hash",
             "summary": "Produces\u0020a\u0020scalar\u0020or\u0020null\u0020value\u0020to\u0020be\u0020used\u0020as\u0020the\u0020object\u0027s\u0020hash,\u0020which\u0020determines\nwhere\u0020it\u0020goes\u0020in\u0020the\u0020hash\u0020table.\u0020While\u0020this\u0020value\u0020does\u0020not\u0020have\u0020to\u0020be\nunique,\u0020objects\u0020which\u0020are\u0020equal\u0020must\u0020have\u0020the\u0020same\u0020hash\u0020value.",
             "url": "classes/Par-Core-Enum.html#method_hash"
-        },                {
-            "fqsen": "\\Par\\Core\\Enum\u003A\u003A__clone\u0028\u0029",
-            "name": "__clone",
-            "summary": "",
-            "url": "classes/Par-Core-Enum.html#method___clone"
-        },                {
-            "fqsen": "\\Par\\Core\\Enum\u003A\u003A__sleep\u0028\u0029",
-            "name": "__sleep",
-            "summary": "",
-            "url": "classes/Par-Core-Enum.html#method___sleep"
-        },                {
-            "fqsen": "\\Par\\Core\\Enum\u003A\u003A__wakeup\u0028\u0029",
-            "name": "__wakeup",
-            "summary": "",
-            "url": "classes/Par-Core-Enum.html#method___wakeup"
         },                {
             "fqsen": "\\Par\\Core\\Exception\\ExceptionInterface",
             "name": "ExceptionInterface",
@@ -195,21 +175,6 @@ Search.appendIndex(
             "name": "assertHashEquals",
             "summary": "",
             "url": "classes/Par-Core-PHPUnit-HashableAssertions.html#method_assertHashEquals"
-        },                {
-            "fqsen": "\\Par\\Core\\Util\\StringUtils",
-            "name": "StringUtils",
-            "summary": "",
-            "url": "classes/Par-Core-Util-StringUtils.html"
-        },                {
-            "fqsen": "\\Par\\Core\\Util\\StringUtils\u003A\u003AquoteList\u0028\u0029",
-            "name": "quoteList",
-            "summary": "Returns\u0020a\u0020list\u0020where\u0020all\u0020elements\u0020have\u0020been\u0020encapsulated\u0020with\u0020double\u0020quotes\u0020\u0028\u0060\u0022element\u0022\u0060\u0029.",
-            "url": "classes/Par-Core-Util-StringUtils.html#method_quoteList"
-        },                {
-            "fqsen": "\\Par\\Core\\Util\\StringUtils\u003A\u003AlistToHumanReadable\u0028\u0029",
-            "name": "listToHumanReadable",
-            "summary": "Returns\u0020a\u0020string\u0020where\u0020all\u0020elements\u0020have\u0020been\u0020joined\u0020in\u0020a\u0020human\u0020readable\u0020way.",
-            "url": "classes/Par-Core-Util-StringUtils.html#method_listToHumanReadable"
         },                {
             "fqsen": "\\Par\\Core\\Values",
             "name": "Values",
