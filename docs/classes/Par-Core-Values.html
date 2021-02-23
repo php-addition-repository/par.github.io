@@ -88,7 +88,7 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/core/src/Values.php"><a href="files/packages-core-src-values.html"><abbr title="packages/core/src/Values.php">Values.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 </aside>
 
             <p class="phpdocumentor-summary">This class consists of static utility methods for operating on values.</p>
@@ -132,13 +132,6 @@ table. While this value does not have to be unique, values which are equal must 
 &quot;textually represents&quot; this value. The result should be a concise but informative representation that
 is easy for a person to read.</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Par-Core-Values.html#method_typeOf">typeOf()</a>
-    <span>
-                        &nbsp;: string    </span>
-</dt>
-<dd>Returns a textual representation for the type of value.</dd>
-
         </dl>
 
 
@@ -165,7 +158,7 @@ is easy for a person to read.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/core/src/Values.php"><a href="files/packages-core-src-values.html"><abbr title="packages/core/src/Values.php">Values.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">28</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 </aside>
 
         <p class="phpdocumentor-summary">Determines if values should be considered equal.</p>
@@ -237,7 +230,7 @@ is easy for a person to read.</dd>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/core/src/Values.php"><a href="files/packages-core-src-values.html"><abbr title="packages/core/src/Values.php">Values.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">153</span>
+    <span class="phpdocumentor-element-found-in__line">104</span>
 </aside>
 
         <p class="phpdocumentor-summary">Produces a scalar or null value to be used as the value&#039;s hash, which determines where it goes in the hash
@@ -298,7 +291,7 @@ table. While this value does not have to be unique, values which are equal must 
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/core/src/Values.php"><a href="files/packages-core-src-values.html"><abbr title="packages/core/src/Values.php">Values.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 </aside>
 
         <p class="phpdocumentor-summary">Returns a string representation of the provided value. In general, the `toString` method returns a string that
@@ -371,88 +364,6 @@ via <code class="prettyprint">static::hash($value)</code>.</li>
     <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
             <section class="phpdocumentor-description"></section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_typeOf">
-        typeOf()
-        <a href="classes/Par-Core-Values.html#method_typeOf" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/core/src/Values.php"><a href="files/packages-core-src-values.html"><abbr title="packages/core/src/Values.php">Values.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">123</span>
-</aside>
-
-        <p class="phpdocumentor-summary">Returns a textual representation for the type of value.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">typeOf</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-        <section class="phpdocumentor-description"><ul>
-<li>
-<code class="prettyprint">'null'</code> for a <strong>NULL</strong> value.</li>
-<li>
-<code class="prettyprint">'int'</code> for a native <strong>integer</strong>.</li>
-<li>
-<code class="prettyprint">'float'</code> for a native <strong>float</strong> or <strong>double</strong>.</li>
-<li>
-<code class="prettyprint">'bool'</code> for a native <strong>boolean</strong>.</li>
-<li>
-<code class="prettyprint">'string'</code> for a native <strong>string</strong>.</li>
-<li>
-<code class="prettyprint">'array'</code> for a native <strong>array</strong>.</li>
-<li>
-<code class="prettyprint">'className'</code> for an <strong>object</strong>. <code class="prettyprint">get_class($value)</code> is used for all objects except for anonymous classes, in
-which case 'anonymous' is used.</li>
-<li>
-<code class="prettyprint">'closure'</code> for a <strong>closure</strong> which is actually an instance of <code class="prettyprint">Closure</code>.</li>
-<li>
-<code class="prettyprint">'resource'</code> for a <strong>resource</strong>.</li>
-</ul>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$value</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The value for which to determine the type</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-mutation-free</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                                 <section class="phpdocumentor-description"></section>
-
-                                    </dd>
-                        </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>The type of value.</p>
-</section>
 
     
 </article>

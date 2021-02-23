@@ -191,11 +191,6 @@ Search.appendIndex(
             "summary": "Returns\u0020a\u0020string\u0020representation\u0020of\u0020the\u0020provided\u0020value.\u0020In\u0020general,\u0020the\u0020\u0060toString\u0060\u0020method\u0020returns\u0020a\u0020string\u0020that\n\u0022textually\u0020represents\u0022\u0020this\u0020value.\u0020The\u0020result\u0020should\u0020be\u0020a\u0020concise\u0020but\u0020informative\u0020representation\u0020that\nis\u0020easy\u0020for\u0020a\u0020person\u0020to\u0020read.",
             "url": "classes/Par-Core-Values.html#method_toString"
         },                {
-            "fqsen": "\\Par\\Core\\Values\u003A\u003AtypeOf\u0028\u0029",
-            "name": "typeOf",
-            "summary": "Returns\u0020a\u0020textual\u0020representation\u0020for\u0020the\u0020type\u0020of\u0020value.",
-            "url": "classes/Par-Core-Values.html#method_typeOf"
-        },                {
             "fqsen": "\\Par\\Core\\Values\u003A\u003Ahash\u0028\u0029",
             "name": "hash",
             "summary": "Produces\u0020a\u0020scalar\u0020or\u0020null\u0020value\u0020to\u0020be\u0020used\u0020as\u0020the\u0020value\u0027s\u0020hash,\u0020which\u0020determines\u0020where\u0020it\u0020goes\u0020in\u0020the\u0020hash\ntable.\u0020While\u0020this\u0020value\u0020does\u0020not\u0020have\u0020to\u0020be\u0020unique,\u0020values\u0020which\u0020are\u0020equal\u0020must\u0020have\u0020the\u0020same\u0020hash\u0020value.",
