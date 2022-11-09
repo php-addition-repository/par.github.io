@@ -1,80 +1,10 @@
 Search.appendIndex(
     [
                 {
-            "fqsen": "\\Par\\Core\\Enum",
-            "name": "Enum",
-            "summary": "This\u0020is\u0020the\u0020common\u0020base\u0020class\u0020of\u0020all\u0020enumerations.",
-            "url": "classes/Par-Core-Enum.html"
-        },                {
-            "fqsen": "\\Par\\Core\\Enum\u003A\u003AvalueOf\u0028\u0029",
-            "name": "valueOf",
-            "summary": "Returns\u0020the\u0020enum\u0020element\u0020of\u0020the\u0020specified\u0020enum\u0020type\u0020with\u0020the\u0020specified\u0020name.\u0020The\u0020name\u0020must\u0020match\u0020exactly\u0020an\nidentifier\u0020used\u0020to\u0020declare\u0020an\u0020enum\u0020element\u0020in\u0020this\u0020type.\u0020\u0028Extraneous\u0020whitespace\u0020characters\u0020are\u0020not\u0020permitted.\u0029",
-            "url": "classes/Par-Core-Enum.html#method_valueOf"
-        },                {
-            "fqsen": "\\Par\\Core\\Enum\u003A\u003Avalues\u0028\u0029",
-            "name": "values",
-            "summary": "Returns\u0020a\u0020list\u0020containing\u0020the\u0020elements\u0020of\u0020this\u0020enum\u0020type,\u0020in\u0020the\u0020order\u0020they\u0020are\u0020declared.",
-            "url": "classes/Par-Core-Enum.html#method_values"
-        },                {
-            "fqsen": "\\Par\\Core\\Enum\u003A\u003Aordinal\u0028\u0029",
-            "name": "ordinal",
-            "summary": "Returns\u0020the\u0020ordinal\u0020of\u0020this\u0020enum\u0020element\u0020\u0028its\u0020position\u0020in\u0020its\u0020declaration,\u0020where\u0020the\u0020initial\u0020element\u0020is\u0020assigned\nan\u0020ordinal\u0020of\u0020zero\u0029.",
-            "url": "classes/Par-Core-Enum.html#method_ordinal"
-        },                {
-            "fqsen": "\\Par\\Core\\Enum\u003A\u003Aname\u0028\u0029",
-            "name": "name",
-            "summary": "Returns\u0020the\u0020name\u0020of\u0020this\u0020enum\u0020element,\u0020exactly\u0020as\u0020declared.",
-            "url": "classes/Par-Core-Enum.html#method_name"
-        },                {
-            "fqsen": "\\Par\\Core\\Enum\u003A\u003AtoString\u0028\u0029",
-            "name": "toString",
-            "summary": "Returns\u0020the\u0020name\u0020of\u0020this\u0020enum\u0020constant,\u0020as\u0020contained\u0020in\u0020the\u0020declaration.",
-            "url": "classes/Par-Core-Enum.html#method_toString"
-        },                {
-            "fqsen": "\\Par\\Core\\Enum\u003A\u003A__toString\u0028\u0029",
-            "name": "__toString",
-            "summary": "Returns\u0020the\u0020name\u0020of\u0020this\u0020enum\u0020constant,\u0020as\u0020contained\u0020in\u0020the\u0020declaration.",
-            "url": "classes/Par-Core-Enum.html#method___toString"
-        },                {
-            "fqsen": "\\Par\\Core\\Enum\u003A\u003Aequals\u0028\u0029",
-            "name": "equals",
-            "summary": "Determines\u0020if\u0020two\u0020objects\u0020should\u0020be\u0020considered\u0020equal.\u0020Both\u0020objects\u0020will\u0020be\u0020instances\u0020of\u0020the\u0020same\u0020class\u0020but\u0020may\nnot\u0020be\u0020the\u0020same\u0020instance.",
-            "url": "classes/Par-Core-Enum.html#method_equals"
-        },                {
-            "fqsen": "\\Par\\Core\\Enum\u003A\u003Ahash\u0028\u0029",
-            "name": "hash",
-            "summary": "Produces\u0020a\u0020scalar\u0020or\u0020null\u0020value\u0020to\u0020be\u0020used\u0020as\u0020the\u0020object\u0027s\u0020hash,\u0020which\u0020determines\nwhere\u0020it\u0020goes\u0020in\u0020the\u0020hash\u0020table.\u0020While\u0020this\u0020value\u0020does\u0020not\u0020have\u0020to\u0020be\nunique,\u0020objects\u0020which\u0020are\u0020equal\u0020must\u0020have\u0020the\u0020same\u0020hash\u0020value.",
-            "url": "classes/Par-Core-Enum.html#method_hash"
-        },                {
             "fqsen": "\\Par\\Core\\Exception\\ExceptionInterface",
             "name": "ExceptionInterface",
             "summary": "",
             "url": "classes/Par-Core-Exception-ExceptionInterface.html"
-        },                {
-            "fqsen": "\\Par\\Core\\Exception\\InvalidEnumDefinition",
-            "name": "InvalidEnumDefinition",
-            "summary": "",
-            "url": "classes/Par-Core-Exception-InvalidEnumDefinition.html"
-        },                {
-            "fqsen": "\\Par\\Core\\Exception\\InvalidEnumDefinition\u003A\u003AmissingClassConstants\u0028\u0029",
-            "name": "missingClassConstants",
-            "summary": "",
-            "url": "classes/Par-Core-Exception-InvalidEnumDefinition.html#method_missingClassConstants"
-        },                {
-            "fqsen": "\\Par\\Core\\Exception\\InvalidEnumDefinition\u003A\u003AnoMethodTagsDefinedOn\u0028\u0029",
-            "name": "noMethodTagsDefinedOn",
-            "summary": "",
-            "url": "classes/Par-Core-Exception-InvalidEnumDefinition.html#method_noMethodTagsDefinedOn"
-        },                {
-            "fqsen": "\\Par\\Core\\Exception\\InvalidEnumElement",
-            "name": "InvalidEnumElement",
-            "summary": "",
-            "url": "classes/Par-Core-Exception-InvalidEnumElement.html"
-        },                {
-            "fqsen": "\\Par\\Core\\Exception\\InvalidEnumElement\u003A\u003AwithName\u0028\u0029",
-            "name": "withName",
-            "summary": "",
-            "url": "classes/Par-Core-Exception-InvalidEnumElement.html#method_withName"
         },                {
             "fqsen": "\\Par\\Core\\Exception\\LogicException",
             "name": "LogicException",
@@ -91,14 +21,9 @@ Search.appendIndex(
             "summary": "Produces\u0020a\u0020scalar\u0020or\u0020null\u0020value\u0020to\u0020be\u0020used\u0020as\u0020the\u0020object\u0027s\u0020hash,\u0020which\u0020determines\nwhere\u0020it\u0020goes\u0020in\u0020the\u0020hash\u0020table.\u0020While\u0020this\u0020value\u0020does\u0020not\u0020have\u0020to\u0020be\nunique,\u0020objects\u0020which\u0020are\u0020equal\u0020must\u0020have\u0020the\u0020same\u0020hash\u0020value.",
             "url": "classes/Par-Core-Hashable.html#method_hash"
         },                {
-            "fqsen": "\\Par\\Core\\Hashable\u003A\u003Aequals\u0028\u0029",
-            "name": "equals",
-            "summary": "Determines\u0020if\u0020two\u0020objects\u0020should\u0020be\u0020considered\u0020equal.\u0020Both\u0020objects\u0020will\u0020be\u0020instances\u0020of\u0020the\u0020same\u0020class\u0020but\u0020may\nnot\u0020be\u0020the\u0020same\u0020instance.",
-            "url": "classes/Par-Core-Hashable.html#method_equals"
-        },                {
             "fqsen": "\\Par\\Core\\HashCode",
             "name": "HashCode",
-            "summary": "Collection\u0020of\u0020static\u0020methods\u0020to\u0020easily\u0020transform\u0020a\u0020value\u0020of\u0020any\u0020type\u0020to\u0020an\u002032\u0020bit\u0020integer\u0020representation.",
+            "summary": "Collection\u0020of\u0020static\u0020methods\u0020to\u0020easily\u0020transform\u0020a\u0020value\u0020of\u0020any\u0020type\u0020to\u0020an\u002032\u002Dbit\u0020integer\u0020representation.",
             "url": "classes/Par-Core-HashCode.html"
         },                {
             "fqsen": "\\Par\\Core\\HashCode\u003A\u003AforAny\u0028\u0029",
@@ -146,35 +71,40 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Par-Core-HashCode.html#constant_MAX_RECURSION_DEPTH"
         },                {
-            "fqsen": "\\Par\\Core\\PHPUnit\\Constraint\\HashableEquals",
-            "name": "HashableEquals",
-            "summary": "",
-            "url": "classes/Par-Core-PHPUnit-Constraint-HashableEquals.html"
+            "fqsen": "\\Par\\Core\\ObjectEquality",
+            "name": "ObjectEquality",
+            "summary": "An\u0020object\u0020implementing\u0020this\u0020interface\u0020can\u0020determine\u0020if\u0020it\u0020equals\u0020any\u0020other\u0020value.",
+            "url": "classes/Par-Core-ObjectEquality.html"
         },                {
-            "fqsen": "\\Par\\Core\\PHPUnit\\Constraint\\HashableEquals\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "",
-            "url": "classes/Par-Core-PHPUnit-Constraint-HashableEquals.html#method___construct"
+            "fqsen": "\\Par\\Core\\ObjectEquality\u003A\u003Aequals\u0028\u0029",
+            "name": "equals",
+            "summary": "Determines\u0020if\u0020object\u0020should\u0020be\u0020considered\u0020equal\u0020to\u0020other\u0020value.",
+            "url": "classes/Par-Core-ObjectEquality.html#method_equals"
         },                {
-            "fqsen": "\\Par\\Core\\PHPUnit\\Constraint\\HashableEquals\u003A\u003AtoString\u0028\u0029",
-            "name": "toString",
+            "fqsen": "\\Par\\Core\\PHPUnit\\ObjectEqualityComparator",
+            "name": "ObjectEqualityComparator",
             "summary": "",
-            "url": "classes/Par-Core-PHPUnit-Constraint-HashableEquals.html#method_toString"
+            "url": "classes/Par-Core-PHPUnit-ObjectEqualityComparator.html"
         },                {
-            "fqsen": "\\Par\\Core\\PHPUnit\\HashableAssertions",
-            "name": "HashableAssertions",
-            "summary": "Include\u0020this\u0020trait\u0020in\u0020your\u0020unit\u0020tests\u0020to\u0020easily\u0020compare\u0020a\u0020value\u0020against\u0020an\u0020expected\u0020instance\u0020of\u0020a\n\u0060\\Par\\Core\\Hashable\u0060\u0020implementation.",
-            "url": "classes/Par-Core-PHPUnit-HashableAssertions.html"
-        },                {
-            "fqsen": "\\Par\\Core\\PHPUnit\\HashableAssertions\u003A\u003AassertHashNotEquals\u0028\u0029",
-            "name": "assertHashNotEquals",
+            "fqsen": "\\Par\\Core\\PHPUnit\\ObjectEqualityComparator\u003A\u003Aaccepts\u0028\u0029",
+            "name": "accepts",
             "summary": "",
-            "url": "classes/Par-Core-PHPUnit-HashableAssertions.html#method_assertHashNotEquals"
+            "url": "classes/Par-Core-PHPUnit-ObjectEqualityComparator.html#method_accepts"
         },                {
-            "fqsen": "\\Par\\Core\\PHPUnit\\HashableAssertions\u003A\u003AassertHashEquals\u0028\u0029",
-            "name": "assertHashEquals",
+            "fqsen": "\\Par\\Core\\PHPUnit\\ObjectEqualityComparator\u003A\u003AassertEquals\u0028\u0029",
+            "name": "assertEquals",
             "summary": "",
-            "url": "classes/Par-Core-PHPUnit-HashableAssertions.html#method_assertHashEquals"
+            "url": "classes/Par-Core-PHPUnit-ObjectEqualityComparator.html#method_assertEquals"
+        },                {
+            "fqsen": "\\Par\\Core\\PHPUnit\\ObjectEqualityExtension",
+            "name": "ObjectEqualityExtension",
+            "summary": "A\u0020PHPUnit\u0020extension\u0020that\u0020adds\u0020the\u0020ability\u0020to\u0020use\u0020the\u0020\u0022assertEquals\u0022\u0020assertion\u0020on\u0020when\u0020the\u0020expected\u0020object\u0020implements\nthe\u0020ObjectEquality\u0020interface.",
+            "url": "classes/Par-Core-PHPUnit-ObjectEqualityExtension.html"
+        },                {
+            "fqsen": "\\Par\\Core\\PHPUnit\\ObjectEqualityExtension\u003A\u003AexecuteBeforeFirstTest\u0028\u0029",
+            "name": "executeBeforeFirstTest",
+            "summary": "",
+            "url": "classes/Par-Core-PHPUnit-ObjectEqualityExtension.html#method_executeBeforeFirstTest"
         },                {
             "fqsen": "\\Par\\Core\\Values",
             "name": "Values",
@@ -201,6 +131,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/default.html"
         },                {
+            "fqsen": "\\Par\\Core\\Exception",
+            "name": "Exception",
+            "summary": "",
+            "url": "namespaces/par-core-exception.html"
+        },                {
             "fqsen": "\\Par\\Core",
             "name": "Core",
             "summary": "",
@@ -210,16 +145,6 @@ Search.appendIndex(
             "name": "Par",
             "summary": "",
             "url": "namespaces/par.html"
-        },                {
-            "fqsen": "\\Par\\Core\\Exception",
-            "name": "Exception",
-            "summary": "",
-            "url": "namespaces/par-core-exception.html"
-        },                {
-            "fqsen": "\\Par\\Core\\PHPUnit\\Constraint",
-            "name": "Constraint",
-            "summary": "",
-            "url": "namespaces/par-core-phpunit-constraint.html"
         },                {
             "fqsen": "\\Par\\Core\\PHPUnit",
             "name": "PHPUnit",

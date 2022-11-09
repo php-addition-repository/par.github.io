@@ -91,12 +91,16 @@
                     <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/par.html">Par</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/par-core.html">Core</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/par-core-phpunit.html">PHPUnit</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    Values
+    ObjectEqualityComparator
 
+        <span class="phpdocumentor-element__extends">
+        extends <abbr title="\SebastianBergmann\Comparator\Comparator">Comparator</abbr>
+    </span>
     
             <div class="phpdocumentor-element__package">
             in package
@@ -109,14 +113,13 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/core/src/Values.php"><a href="files/packages-core-src-values.html"><abbr title="packages/core/src/Values.php">Values.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/core/src/PHPUnit/ObjectEqualityComparator.php"><a href="files/packages-core-src-phpunit-objectequalitycomparator.html"><abbr title="packages/core/src/PHPUnit/ObjectEqualityComparator.php">ObjectEqualityComparator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">12</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">This class consists of static utility methods for operating on values.</p>
-
+        
 
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
@@ -124,7 +127,16 @@
         <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                </dl>
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">psalm-suppress</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>PropertyNotSetInConstructor</p>
+</section>
+
+                                    </dd>
+                                            </dl>
 
 
 
@@ -138,28 +150,18 @@
 
 <dl class="phpdocumentor-table-of-contents">
                         <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Par-Core-Values.html#method_equals">equals()</a>
+    <a href="classes/Par-Core-PHPUnit-ObjectEqualityComparator.html#method_accepts">accepts()</a>
     <span>
                                 &nbsp;: bool    </span>
 </dt>
-<dd>Determines if values should be considered equal.</dd>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Par-Core-Values.html#method_hash">hash()</a>
+    <a href="classes/Par-Core-PHPUnit-ObjectEqualityComparator.html#method_assertEquals">assertEquals()</a>
     <span>
-                                &nbsp;: bool|float|int|string|null    </span>
+                                &nbsp;: void    </span>
 </dt>
-<dd>Produces a scalar or null value to be used as the value&#039;s hash, which determines where it goes in the hash
-table. While this value does not have to be unique, values which are equal must have the same hash value.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Par-Core-Values.html#method_toString">toString()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd>Returns a string representation of the provided value. In general, the `toString` method returns a string that
-&quot;textually represents&quot; this value. The result should be a concise but informative representation that
-is easy for a person to read.</dd>
+<dd></dd>
 
         </dl>
 
@@ -172,54 +174,48 @@ is easy for a person to read.</dd>
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Par-Core-Values.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Par-Core-PHPUnit-ObjectEqualityComparator.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
             -method
             -public
-                                    -static                    "
+                                                        "
 >
-    <h4 class="phpdocumentor-element__name" id="method_equals">
-        equals()
-        <a href="classes/Par-Core-Values.html#method_equals" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_accepts">
+        accepts()
+        <a href="classes/Par-Core-PHPUnit-ObjectEqualityComparator.html#method_accepts" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/core/src/Values.php"><a href="files/packages-core-src-values.html"><abbr title="packages/core/src/Values.php">Values.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/core/src/PHPUnit/ObjectEqualityComparator.php"><a href="files/packages-core-src-phpunit-objectequalitycomparator.html"><abbr title="packages/core/src/PHPUnit/ObjectEqualityComparator.php">ObjectEqualityComparator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">17</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Determines if values should be considered equal.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">equals</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$a</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$b</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                    <span class="phpdocumentor-signature__name">accepts</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$expected</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$actual</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
-        <section class="phpdocumentor-description"><p>If <code class="prettyprint">$a</code> implements <code class="prettyprint">Par\Core\ObjectEquality</code>, <code class="prettyprint">$a-&gt;equals($b)</code> is used, or if <code class="prettyprint">$b</code> implements
-<code class="prettyprint">Par\Core\ObjectEquality</code>
-<code class="prettyprint">$b-&gt;equals($a)</code> is used, otherwise uses a strict comparison (<code class="prettyprint">$a === $b</code>).</p>
-</section>
+        <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$a</span>
+                <span class="phpdocumentor-signature__argument__name">$expected</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>A value</p>
-</section>
+                    <section class="phpdocumentor-description"></section>
 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$b</span>
+                <span class="phpdocumentor-signature__argument__name">$actual</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The referenced value with which to compare</p>
-</section>
+                    <section class="phpdocumentor-description"></section>
 
             </dd>
             </dl>
@@ -230,78 +226,10 @@ is easy for a person to read.</dd>
         <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-mutation-free</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+                                </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">bool</span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>True if the arguments are equal to each other</p>
-</section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_hash">
-        hash()
-        <a href="classes/Par-Core-Values.html#method_hash" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/core/src/Values.php"><a href="files/packages-core-src-values.html"><abbr title="packages/core/src/Values.php">Values.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">104</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Produces a scalar or null value to be used as the value&#039;s hash, which determines where it goes in the hash
-table. While this value does not have to be unique, values which are equal must have the same hash value.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">hash</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool|float|int|string|null</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$value</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The value to produce a hash for</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-mutation-free</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">bool|float|int|string|null</span>
             &mdash;
         
     
@@ -310,66 +238,61 @@ table. While this value does not have to be unique, values which are equal must 
         class="phpdocumentor-element
             -method
             -public
-                                    -static                    "
+                                                        "
 >
-    <h4 class="phpdocumentor-element__name" id="method_toString">
-        toString()
-        <a href="classes/Par-Core-Values.html#method_toString" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_assertEquals">
+        assertEquals()
+        <a href="classes/Par-Core-PHPUnit-ObjectEqualityComparator.html#method_assertEquals" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="packages/core/src/Values.php"><a href="files/packages-core-src-values.html"><abbr title="packages/core/src/Values.php">Values.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="packages/core/src/PHPUnit/ObjectEqualityComparator.php"><a href="files/packages-core-src-phpunit-objectequalitycomparator.html"><abbr title="packages/core/src/PHPUnit/ObjectEqualityComparator.php">ObjectEqualityComparator.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Returns a string representation of the provided value. In general, the `toString` method returns a string that
-&quot;textually represents&quot; this value. The result should be a concise but informative representation that
-is easy for a person to read.</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">toString</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">assertEquals</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$expected</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$actual</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">float&nbsp;</span><span class="phpdocumentor-signature__argument__name">$delta</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0.0</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$canonicalize</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ignoreCase</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
-        <section class="phpdocumentor-description"><p>It will transform a value implementing <code class="prettyprint">\Par\Core\Hashable</code> to string. Other values become:</p>
-<ul>
-<li>
-<code class="prettyprint">'null'</code> for a <strong>NULL</strong> value.</li>
-<li>
-<code class="prettyprint">'value'</code> for a native <strong>integer</strong>.</li>
-<li>
-<code class="prettyprint">'value'</code> for a native <strong>float</strong> or <strong>double</strong>.</li>
-<li>
-<code class="prettyprint">'true'</code> or <code class="prettyprint">'false'</code> for a native <strong>boolean</strong>.</li>
-<li>
-<code class="prettyprint">'value'</code> for a native <strong>string</strong>.</li>
-<li>
-<code class="prettyprint">'[el1, el2, elN]'</code> for a native <strong>array</strong> list or <code class="prettyprint">'{key1=el1, key2=el2, keyN=elN}'</code> for native a <strong>array</strong>
-map. Where <strong>elN</strong> and <strong>keyN</strong> are textual representations of its value, except when its value is an array
-then <code class="prettyprint">'[...]'</code> is used.</li>
-<li>
-<code class="prettyprint">'className@hash'</code> for an <strong>object</strong>. <code class="prettyprint">get_class($value)</code> is used for all objects except for anonymous
-classes, in which case &quot;anonymous&quot; is used. The hash is determined via <code class="prettyprint">static::hash($value)</code>.</li>
-<li>
-<code class="prettyprint">'closure@hash'</code> for a <strong>closure</strong>. The hash is determined via <code class="prettyprint">static::hash($value)</code>. Be aware that a closure
-in PHP is actually an object (instance of <code class="prettyprint">\Closure</code>).</li>
-<li>
-<code class="prettyprint">'resource(type)@hash'</code> for a <strong>resource</strong>. The type is determined via <code class="prettyprint">get_resource_type</code> unless the resource
-is closed, in which case 'closed' is used since the type cannot be determined in PHP. The hash is determined
-via <code class="prettyprint">static::hash($value)</code>.</li>
-</ul>
-</section>
-
+    
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$value</span>
+                <span class="phpdocumentor-signature__argument__name">$expected</span>
                 : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>The value for which to determine the textual representation</p>
-</section>
-
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$actual</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$delta</span>
+                : <span class="phpdocumentor-signature__argument__return-type">float</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">0.0</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$canonicalize</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$ignoreCase</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
             </dd>
             </dl>
 
@@ -379,17 +302,10 @@ via <code class="prettyprint">static::hash($value)</code>.</li>
         <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
     </h5>
     <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">psalm-mutation-free</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                                
-                                             
-                                    </dd>
-                                            </dl>
+                                </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
+    <span class="phpdocumentor-signature__response_type">void</span>
             &mdash;
         
     
@@ -400,7 +316,7 @@ via <code class="prettyprint">static::hash($value)</code>.</li>
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/packages/core/src/Values.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/packages/core/src/PHPUnit/ObjectEqualityComparator.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
         <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
@@ -502,7 +418,7 @@ via <code class="prettyprint">static::hash($value)</code>.</li>
 </section>
             </div>
         </div>
-        <a href="classes/Par-Core-Values.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Par-Core-PHPUnit-ObjectEqualityComparator.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
