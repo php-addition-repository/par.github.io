@@ -202,7 +202,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/core/src/Values.php"><a href="files/packages-core-src-values.html"><abbr title="packages/core/src/Values.php">Values.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">30</span>
+    <span class="phpdocumentor-element-found-in__line">37</span>
 
     </aside>
 
@@ -221,6 +221,11 @@
 <li>When both values are instances of <code class="prettyprint">\DateTimeImmutable</code> <code class="prettyprint">$value == $otherValue</code> is used.</li>
 <li>Otherwise a strict comparison (<code class="prettyprint">$value === $otherValue</code>) is used.</li>
 </ul>
+<p>Usage:</p>
+<pre class="prettyprint"><code class="language-php">if (Values::equals($a, $b)) {
+    // When equal
+}
+</code></pre>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -285,7 +290,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/core/src/Values.php"><a href="files/packages-core-src-values.html"><abbr title="packages/core/src/Values.php">Values.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">80</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 
     </aside>
 
@@ -297,7 +302,13 @@
 
     <div class="phpdocumentor-label-line">
         </div>
-    
+        <section class="phpdocumentor-description"><p>Usage:</p>
+<pre class="prettyprint"><code class="language-php">if (Values::equalsNoneOf($a, $b, $c)) {
+    // When not equal to $b and $c
+}
+</code></pre>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -334,6 +345,14 @@
                                                                                 
                                              
                                     </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Par\Core\Values::equals">Values::equals</abbr></span>
+                                        
+                                             
+                                    </dd>
                                             </dl>
 
             <section>
@@ -360,7 +379,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/core/src/Values.php"><a href="files/packages-core-src-values.html"><abbr title="packages/core/src/Values.php">Values.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">75</span>
 
     </aside>
 
@@ -372,7 +391,13 @@
 
     <div class="phpdocumentor-label-line">
         </div>
-    
+        <section class="phpdocumentor-description"><p>Usage:</p>
+<pre class="prettyprint"><code class="language-php">if (Values::equalsOneOf($a, $b, $c)) {
+// When not equal to $b or $c
+}
+</code></pre>
+</section>
+
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
@@ -407,6 +432,14 @@
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
+                                             
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><abbr title="\Par\Core\Values::equals">Values::equals</abbr></span>
+                                        
                                              
                                     </dd>
                                             </dl>

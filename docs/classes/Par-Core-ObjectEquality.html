@@ -109,12 +109,17 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/core/src/ObjectEquality.php"><a href="files/packages-core-src-objectequality.html"><abbr title="packages/core/src/ObjectEquality.php">ObjectEquality.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">10</span>
+    <span class="phpdocumentor-element-found-in__line">15</span>
 
     </aside>
 
             <p class="phpdocumentor-summary">An object implementing this interface can determine if it equals any other value.</p>
 
+    <section class="phpdocumentor-description"><p>Strict comparison (<code class="prettyprint">$a === $b</code>) does not work on different instances of objects that represent the same value.
+Regular comparison (<code class="prettyprint">$a == $b</code>) is possible, but you need to remember to use it on object comparison, but not on
+other value types which is confusing. By implementing this interface on the objects that require comparison you can
+use <code class="prettyprint">$a-&gt;equals($b)</code> and you have all the control.</p>
+</section>
 
 
 
@@ -175,7 +180,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="packages/core/src/ObjectEquality.php"><a href="files/packages-core-src-objectequality.html"><abbr title="packages/core/src/ObjectEquality.php">ObjectEquality.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 
     </aside>
 
@@ -187,7 +192,17 @@
 
     <div class="phpdocumentor-label-line">
         </div>
-        <section class="phpdocumentor-description"><p>In most cases the method evaluates to true if the other value has the type and internal value(s).</p>
+        <section class="phpdocumentor-description"><p>In most cases the method evaluates to true if the other value has the same type and internal value(s) with an
+implementation like the following.</p>
+<pre class="prettyprint"><code class="language-php">public function equals(mixed $other): bool
+{
+   if ($other instanceof self) {
+       return $other-&gt;value === $this-&gt;value;
+   }
+
+   return false;
+}
+</code></pre>
 </section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -215,7 +230,7 @@
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                                 <section class="phpdocumentor-description"><p>&quot;packages/core/test/Fixtures/ScalarValueObject.php&quot; Implementation example</p>
+                                                 <section class="phpdocumentor-description"><p>packages/core/test/Fixtures/ScalarValueObject.php 15 7 Implementation example</p>
 </section>
 
                                     </dd>
