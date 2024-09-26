@@ -1,0 +1,16 @@
+{
+    "name": "par/core",
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Par\\Core\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ParTest\\Core\\": "test"
+        }
+    }
+}
