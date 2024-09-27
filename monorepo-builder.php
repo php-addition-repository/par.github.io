@@ -13,6 +13,7 @@ return static function(MBConfig $mbConfig): void {
     $mbConfig->dataToAppend(
         [
             ComposerJsonSection::REQUIRE_DEV => [
+                'phpunit/phpunit' => '^11.3',
                 'symplify/monorepo-builder' => '^11.2',
             ],
         ]

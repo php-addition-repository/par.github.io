@@ -1,0 +1,27 @@
+networks:
+  backend:
+    driver: ${NETWORKS_DRIVER-bridge}
+
+services:
+  workspace:
+    build:
+      context: .
+      dockerfile: .docker/workspace/Dockerfile
+    volumes:
+      - source: ~/.ssh
+        target: /home/app/.ssh
+        type: bind
+        read_only: true
+      - source: ~/.gitconfig
+        target: /home/app/.gitconfig
+        type: bind
+        read_only: true
+      - source: ~/.cache
+        target: /home/app/.cache
+        type: bind
+      - source: .
+        target: /app
+        type: bind
+    tty: true
+    networks:
+      - backend

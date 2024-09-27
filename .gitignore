@@ -1,5 +1,13 @@
+.docker/.env
+
 .idea
 /*.iml
 
 /vendor
-composer.lock
+composer.phar
+
+/tools/*/vendor
+
+.php-cs-fixer.cache
+.phpunit.result.cache
+phpstan.neon

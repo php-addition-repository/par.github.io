@@ -1,0 +1,81 @@
+name: Code style
+
+on:
+  push:
+    paths:
+      - "**.php"
+      - ".github/workflows/code-style.yml"
+      - ".php-cs-fixer.dist.php"
+    branches:
+      - main
+  pull_request:
+    paths:
+      - "**.php"
+      - ".github/workflows/code-style.yml"
+      - ".php-cs-fixer.dist.php"
+
+defaults:
+  run:
+    shell: bash
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  php-cs-fixer:
+    name: "PHP CS Fixer"
+    runs-on: ubuntu-latest
+    env:
+      extensions: apcu,intl,mbstring,iconv
+      php: 8.2
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          coverage: "none"
+          ini-values: date.timezone=UTC,memory_limit=-1,session.gc_probability=0,apc.enable_cli=1,zend.assertions=1
+          php-version: "${{ env.php }}"
+          extensions: "${{ env.extensions }}"
+          tools: cs2pr
+      - name: Composer install
+        uses: ramsey/composer-install@v3
+      - name: Composer install
+        uses: ramsey/composer-install@v3
+        with:
+          working-directory: tools/php-cs-fixer
+      - name: php-cs-fixer
+        run: ./tools/php-cs-fixer/vendor/bin/php-cs-fixer check --show-progress=none --format=checkstyle | cs2pr
+  phpstan:
+    name: "PHPStan"
+    runs-on: ubuntu-latest
+    env:
+      extensions: apcu,intl,mbstring,iconv
+      php: 8.2
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          coverage: "none"
+          ini-values: date.timezone=UTC,memory_limit=-1,session.gc_probability=0,apc.enable_cli=1,zend.assertions=1
+          php-version: "${{ env.php }}"
+          extensions: "${{ env.extensions }}"
+      - name: Composer install
+        uses: ramsey/composer-install@v3
+      - name: Composer install
+        uses: ramsey/composer-install@v3
+        with:
+          working-directory: tools/phpstan
+      - name: phpstan
+        run: ./tools/phpstan/vendor/bin/phpstan analyse --memory-limit=2G --error-format=github
