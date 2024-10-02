@@ -6,6 +6,7 @@ on:
       - "**.php"
       - ".github/workflows/code-style.yml"
       - ".php-cs-fixer.dist.php"
+      - ".phpstan.neon"
     branches:
       - main
   pull_request:
@@ -13,6 +14,7 @@ on:
       - "**.php"
       - ".github/workflows/code-style.yml"
       - ".php-cs-fixer.dist.php"
+      - ".phpstan.neon"
 
 defaults:
   run:
