@@ -6,6 +6,7 @@ namespace ParTest\Core\Unit;
 
 use DateTime;
 use DateTimeImmutable;
+use Par\Core\Hashable;
 use Par\Core\Values;
 use ParTest\Core\Fixtures\EquableObject;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -119,5 +120,20 @@ final class ValuesTest extends TestCase
     ): void {
         self::assertEquals($expectedEqual, Values::equalsAnyOf($value, ...$otherValues));
         self::assertEquals($expectedEqual, Values::equalsAnyIn($value, $otherValues));
+    }
+
+    public function testHashCode(): void
+    {
+        self::assertEquals(0, Values::hashCode(null));
+
+        $hashable = $this->createMock(Hashable::class);
+        $hashable->method('hashCode')->willReturn(10);
+        self::assertEquals(10, Values::hashCode($hashable));
+    }
+
+    public function testHash(): void
+    {
+        self::assertEquals(0, Values::hash(0));
+        self::assertEquals(10, Values::hash(1, 2, 3, 4));
     }
 }
