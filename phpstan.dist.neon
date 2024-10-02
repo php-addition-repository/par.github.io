@@ -9,7 +9,7 @@ parameters:
 		  message: '#Method [a-zA-Z0-9\\_]+Test::[a-zA-Z0-9\\_]+\(\).+#'
 		  # ignore missing value type on iterable type of methods and arguments
 		  identifier: missingType.iterableValue
-#		- path: packages/*/test/Unit/*
-#		  message: '#Method [a-zA-Z0-9\\_]+Test::[a-zA-Z0-9\\_]+\(\).+#'
-#		  # ignore missing value type on generics type of methods and arguments
-#		  identifier: missingType.generics
+		- path: packages/*/test/Unit/*
+		  message: '#Method [a-zA-Z0-9\\_]+Test::[a-zA-Z0-9\\_]+\(\).+#'
+		  # ignore missing value type on generics type of methods and arguments
+		  identifier: missingType.generics
