@@ -13,5 +13,8 @@
         "psr-4": {
             "ParTest\\Core\\": "test"
         }
+    },
+    "suggest": {
+        "phpunit/phpunit": "^10 | ^11"
     }
 }
