@@ -1,4 +1,4 @@
-# PHP Addition Repository - {{name}}
+# PHP Addition Repository - Core
 
 [![GitHub tag](https://img.shields.io/github/v/tag/php-addition-repository/core)](https://github.com/php-addition-repository/core/tags)
 [![Packagist Downloads](https://img.shields.io/packagist/dm/par/core)](https://packagist.org/packages/par/core)
