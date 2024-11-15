@@ -1,0 +1,97 @@
+baseURL: https://example.org/
+title: PHP Addition Repository
+
+enableRobotsTXT: true
+enableGitInfo: true
+# enableEmoji: false
+hasCJKLanguage: true
+
+defaultContentLanguage: en
+
+module:
+  hugoVersion:
+    extended: true
+    min: "0.112.0"
+
+  imports:
+    - path: github.com/imfing/hextra
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+enableInlineShortcodes: true
+
+menu:
+  main:
+    - name: Documentation
+      pageRef: /docs
+      weight: 1
+    - name: Search
+      weight: 10
+      params:
+        type: search
+    - name: GitHub
+      weight: 11
+      url: "https://github.com/php-addition-repository/par"
+      params:
+        icon: github
+
+#  sidebar:
+#  - identifier: more
+#    name: More
+#    params:
+#      type: separator
+#    weight: 1
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    #    logo:
+    #      path: images/logo.svg
+    #      dark: images/logo-dark.svg
+    #      width: 40
+    #      height: 20
+    #      link: /
+    width: wide
+
+  page:
+    # full (100%), wide (90rem), normal (1280px)
+    width: normal
+
+  theme:
+    # light | dark | system
+    default: system
+    displayToggle: true
+
+  footer:
+    enable: true
+    displayCopyright: true
+    displayPoweredBy: true
+    width: normal
+
+  # Search
+  # flexsearch is enabled by default
+  search:
+    enable: true
+    type: flexsearch
+
+    flexsearch:
+      # index page by: content | summary | heading | title
+      index: content
+      # full | forward | reverse | strict
+      # https://github.com/nextapps-de/flexsearch/#tokenizer-prefix-search
+      tokenize: forward
+
+  highlight:
+    copy:
+      enable: true
+      # hover | always
+      display: hover
+
+  comments:
+    enable: false

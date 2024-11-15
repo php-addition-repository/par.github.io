@@ -1,13 +1,19 @@
+# Dev
 .docker/.env
 
+# Intellij
 .idea
 /*.iml
 
+# PHP Composer
 /vendor
 composer.phar
 
+# Tools
 /tools/*/vendor
-
 .php-cs-fixer.cache
 .phpunit.result.cache
 phpstan.neon
+
+# Docs Hugo
+/docs/public/
