@@ -49,11 +49,13 @@ jobs:
         working-directory: docs
         run: hugo --gc --minify
       - name: Deploy
-        uses: tagus/git-deploy@v0.5.0
+        uses: appleboy/git-push-action@v0.0.2
         with:
-          changes: ./docs/public
-          repository: git@github.com:php-addition-repository/php-addition-repository.github.io.git
+          author_email: brouwer.alexander@gmail.com
+          author_name: Alex Brouwer
+          branch: main
+          commit: true
+          commit_message: "Update docs"
+          remote: git@github.com:php-addition-repository/php-addition-repository.github.io.git
           ssh_key: ${{ secrets.REPO_DEPLOY_KEY }}
-          name: Alex Brouwer
-          email: brouwer.alexander@gmail.com
-          clean_repo: true
+
