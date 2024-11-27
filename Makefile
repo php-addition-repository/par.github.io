@@ -61,4 +61,4 @@ help: ## Display this help
 ##@ Hugo
 
 serve: ## Start a hugo server on localhost
-	cd docs; hugo server --buildDrafts --disableFastRender
+	hugo server --buildDrafts --disableFastRender
