@@ -1,5 +1,5 @@
 # Sample workflow for building and deploying a Hugo site to GitHub Pages
-name: Deploy Hugo site to Pages
+name: Deploy Hugo site to GHPages
 
 on:
   # Runs on pushes targeting the default branch
@@ -36,28 +36,39 @@ jobs:
         with:
           fetch-depth: 0  # fetch all history for .GitInfo and .Lastmod
           submodules: recursive
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.138.0'
           extended: true
-      - name: Build
+      - name: Build with Hugo
         env:
-          # For maximum backward compatibility with Hugo modules
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
-          HUGO_ENV: production
-        working-directory: docs
-        run: hugo --gc --minify
-      - name: Deploy
-        uses: appleboy/git-push-action@v1.0.0
+          TZ: Europe/Amsterdam
+        run: hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: docs/public
-          author_email: brouwer.alexander@gmail.com
-          author_name: Alex Brouwer
-          branch: main
-          commit: true
-          commit_message: "Update docs"
-          force: true
-          remote: git@github.com:php-addition-repository/php-addition-repository.github.io.git
-          ssh_key: ${{ secrets.REPO_DEPLOY_KEY }}
+          path: ./public
 
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
