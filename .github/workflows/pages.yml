@@ -57,6 +57,7 @@ jobs:
           branch: main
           commit: true
           commit_message: "Update docs"
+          force: true
           remote: git@github.com:php-addition-repository/php-addition-repository.github.io.git
           ssh_key: ${{ secrets.REPO_DEPLOY_KEY }}
 
